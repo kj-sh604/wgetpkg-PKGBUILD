@@ -6,7 +6,7 @@ arch=('any')
 depends=('wget')
 url="https://github.com/kj-sh604/wgetpkg"
 license=('UNLICENSE')
-source=($pkgname-$pkgver.tar.gz::https://github.com/kj-sh604/wgetpkg/archive/refs/tags/$pkgver.tar.gz)
+source=("$pkgname-$pkgver.tar.gz::https://github.com/kj-sh604/wgetpkg/archive/refs/tags/$pkgver.tar.gz")
 
 package() {
   cd "$srcdir/$pkgname-$pkgver"
